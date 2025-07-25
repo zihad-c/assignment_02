@@ -28,3 +28,46 @@
     font-family: "Inter", sans-serif;
     font-style: normal;
 }
+
+/* navbar style */
+
+.menu {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    color: rgba(137, 135, 161, 1);
+}
+
+.menu-items {
+    gap: 3rem;
+}
+
+#home {
+    color: rgba(37, 36, 50, 1);
+}
+
+#cart {
+    color: #000000;
+}
+
+@media screen and (max-width: 576px) {
+
+    .menu {
+        width: 80%;
+        height: 38px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu>img {
+        object-fit: cover;
+        width: 4rem;
+        height: 2.4rem;
+    }
+
+    .menu-items>#home,
+    #shop,
+    #about {
+        display: none;
+    }
+}
