@@ -29,6 +29,15 @@
     font-style: normal;
 }
 
+.btn-primary {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgba(233, 90, 8, 1);
+    padding: 26px 50px;
+    border: none;
+}
+
 /* navbar style */
 
 .menu {
@@ -63,6 +72,7 @@
 .banner-title {
     font-size: 4rem;
     font-weight: 700;
+    line-height: auto;
 }
 
 #fresh-flowers {
@@ -72,9 +82,83 @@
 .banner-description {
     color: rgba(0, 0, 0, 0.5);
     font-weight: 400;
-    font-size: 1.5rem;
+    line-height: auto;
+    font-size: 1.4rem;
 }
 
+.banner-image>img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* plant section styles */
+
+.our-plant-title {
+    max-width: 75%;
+}
+
+#plant-title {
+    color: #000000;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#our {
+    color: rgba(233, 90, 8, 1);
+}
+
+.plant-description {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.our-plant {
+    max-width: 1140px;
+    margin-bottom: 210px;
+}
+
+.our-plant-product {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    max-width: 270px;
+    max-height: 484px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card>img {
+    width: 100%;
+}
+
+.product-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 150%;
+    margin-top: 30px;
+    color: #111111;
+}
+
+.product-price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 30px;
+    color: #111111;
+}
+
+/* Plants Lover Section styles */
+
+
+/* responsive styles for mobile device */
 @media screen and (max-width: 576px) {
 
     .menu {
@@ -111,7 +195,30 @@
         width: 100%;
     }
 
+    .banner-image>img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
     .banner-description {
         margin-top: 1rem;
     }
+
+    .our-plant-product {
+        grid-template-columns: repeat(2, 270px);
+        justify-content: space-between;
+    }
+
+    .card {
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .card>img {
+        object-fit: cover;
+    }
+
+
+
 }
