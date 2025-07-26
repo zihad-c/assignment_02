@@ -313,6 +313,34 @@ input,
     border: none;
 }
 
+/* footer styles */
+
+#footer {
+    display: flex;
+    gap: 100px;
+    max-width: 1140px;
+    padding: 50px 150px;
+}
+
+.footer-about {
+    padding-right: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5rem;
+    width: 36px;
+    height: 36px;
+}
+
+.link1>ul>li,
+.link2>ul>li {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: gray;
+    font-weight: 500;
+}
+
 /* responsive styles for mobile device */
 @media screen and (max-width: 576px) {
 
@@ -388,4 +416,14 @@ input,
     #email {
         width: auto;
     }
+
+    #footer {
+        flex-direction: column;
+    }
+
+    .footer-about {
+        padding: 0;
+        width: 100%;
+    }
+
 }
