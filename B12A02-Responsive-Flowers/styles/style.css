@@ -103,7 +103,8 @@
     font-weight: 700;
 }
 
-#our {
+#our,
+#latest {
     color: rgba(233, 90, 8, 1);
 }
 
@@ -197,6 +198,121 @@
     padding-right: 60px;
 }
 
+/* latest deals styles */
+
+.deal-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: auto;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.deal-description {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: auto;
+    max-width: 75%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.latest-deals-top {
+    margin-bottom: 120px;
+}
+
+.offer1 {
+    color: #fff;
+    background-image: url(../assets/deal-bloom.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    min-height: 200px;
+    align-content: center;
+    opacity: rgba(0, 0, 0, 0.9);
+    /* background-color: rgba(200, 200, 200, 1); */
+}
+
+.offer2 {
+    color: #fff;
+    background-image: url(../assets/deal-ana.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    min-height: 200px;
+    align-content: center;
+    opacity: rgba(0, 0, 0, 0.9);
+}
+
+.offer3 {
+    color: #fff;
+    background-image: url(../assets/deal-zabo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    min-height: 200px;
+    align-content: center;
+    opacity: rgba(0, 0, 0, 0.9);
+}
+
+.latest-deals-offer {
+    max-width: 1140px;
+    max-height: 424px;
+    display: grid;
+    grid-template-areas:
+        "a b b"
+        "c b b";
+}
+
+/* Join section starts */
+
+#join {
+    max-width: 100%;
+    height: 533px;
+    margin-top: 120px;
+    background-image: url(../assets/news-letter-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-content: center;
+}
+
+.join-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: auto;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+input,
+#email {
+    width: 644px;
+    min-height: 50px;
+    background-color: #ffffff;
+    padding: 20px
+}
+
+.subscribe {
+    width: 186px;
+    min-height: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: auto;
+    background-color: rgba(233, 90, 8, 1);
+    padding: 20px;
+    border: none;
+}
+
 /* responsive styles for mobile device */
 @media screen and (max-width: 576px) {
 
@@ -262,5 +378,14 @@
         flex-direction: column-reverse;
     }
 
+    .join-title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: auto;
+    }
 
+    input,
+    #email {
+        width: auto;
+    }
 }
